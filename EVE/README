@@ -1,0 +1,12 @@
+Computer Requirements:
+	>= Python3.5
+	pyshark
+	tshark
+
+Before running any of the scripts make sure both start_eve and parse have execution permissions. If they don't, run:
+
+chmod +x start_eve parse
+
+Run start_eve to start packet sniffing.  It currently has a capture filter to only capture things from icelab2. To update, open up start_eve and change the mac address to the address that you want to listen too
+
+Once start_eve has been run and terminated, run the parse script.  This will parse through all the received packets and find the ones we are looking for.  It will also get rid of all duplicates.  It will output what was inside of those packets into the output.txt file that it creates.

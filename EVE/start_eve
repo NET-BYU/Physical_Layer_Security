@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Press CTNL-C to stop EVE, then run parse to get packets received."
+
+tshark -i wlan0 -f "wlan host a4:db:30:1d:91:65" -w capture.pcap

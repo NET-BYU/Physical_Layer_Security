@@ -1,0 +1,5 @@
+install these libraries and recompile python3
+
+sudo apt-get install python3-pandas
+sudo apt-get install libbz2-dev
+sudo apt-get install liblzma-dev

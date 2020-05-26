@@ -1,0 +1,32 @@
+Computer Requirements Parser:
+	>= python3.5
+	numpy
+
+Computer Requirements Plot:
+	matlibplot
+	You also probably need tkinter
+
+--------------------------------
+
+To start the Access Point run AP_Start.sh, you might need to update the file path to where the start_hosapd.sh file is.
+
+--------------------------------
+
+If the computer has been rebooted since running Alice you need to set some permissions. Run Alice_Permission.sh to set those permissions.
+
+--------------------------------
+
+To start Alice you will need to run CSI_Python_Parser.py.  There are two different modes, logging and not logging.
+To run not logging run:
+
+python3 CSI_Python_Parser.py 
+
+You can also log the CSI data to be parsed and potentially process it. Run:
+
+python3 CSI_Python_Parser.py log_file_name
+
+log_file_name is the log file you are putting the CSI data too
+
+--------------------------------
+
+Inside the CSI_Python_Parser.py file, towards the top, are two constants, SECONDS_TO_RUN and DB_THRESHOLD. SECONDS_TO_RUN is how long Alice will run, try to transmit data. DB_THRESHOLD is the allowable range between the max and min dB value of the CSI data.

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python3 Packet_Sniff.py capture.pcap output.txt
